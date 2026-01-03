@@ -8,6 +8,7 @@
 [![文档](https://img.shields.io/badge/docs-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![版本](https://img.shields.io/badge/version-2025--12--18.2-orange.svg)](#-版本历史)
 [![欢迎PR](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![测试](https://github.com/hellowind777/helloagents/actions/workflows/test.yml/badge.svg)](https://github.com/hellowind777/helloagents/actions/workflows/test.yml)
 
 [简体中文](./README_CN.md) · [English](./README.md) · [快速开始](#-快速开始) · [文档](#-文档)
 
@@ -126,8 +127,50 @@
 
 ### 前置要求
 - 具有文件系统访问权限的CLI环境（Codex CLI、Claude Code或自定义AI客户端）
+- Node.js >= 14.0.0（仅 npx 安装方式需要）
 
 ### 安装
+
+#### 方式一：npx 一键安装（推荐）
+
+```bash
+# 交互式安装
+npx helloagents
+
+# 使用默认选项安装（非交互）
+npx helloagents -y
+
+# 指定平台和语言
+npx helloagents --platform claude --lang cn
+
+# 预览将执行的操作（不实际写入）
+npx helloagents --dry-run
+```
+
+**CLI 参数说明：**
+
+| 参数 | 说明 |
+|------|------|
+| `--platform <claude\|codex>` | 目标平台（跳过交互） |
+| `--lang <cn\|en>` | 语言版本（跳过交互） |
+| `--yes, -y` | 全部使用默认选项（非交互） |
+| `--dry-run` | 仅显示将执行的操作，不实际写入 |
+| `--skills-only` | 仅更新 skills/helloagents，跳过顶层配置文件 |
+| `--overwrite` | 强制覆盖顶层配置文件（不生成 .new） |
+| `--no-backup` | 跳过备份步骤 |
+| `--no-color` | 禁用 ANSI 颜色输出 |
+
+**冲突处理：**
+- 顶层配置文件（CLAUDE.md/AGENTS.md）已存在时，默认生成 `.helloagents.new` 文件
+- skills/helloagents 目录已存在时，默认备份后覆盖
+- 使用 `--overwrite` 可强制覆盖配置文件
+- 使用 `--no-backup` 可跳过备份
+
+**默认值探测：**
+- 平台：自动检测 `~/.claude` 或 `~/.codex` 目录存在情况
+- 语言：默认中文（cn）
+
+#### 方式二：手动安装
 
 **步骤1：复制规则集到目标目录**
 

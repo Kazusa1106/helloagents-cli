@@ -8,6 +8,7 @@
 [![Documentation](https://img.shields.io/badge/docs-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Version](https://img.shields.io/badge/version-2025--12--18.2-orange.svg)](#-version-history)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Test](https://github.com/hellowind777/helloagents/actions/workflows/test.yml/badge.svg)](https://github.com/hellowind777/helloagents/actions/workflows/test.yml)
 
 [English](./README.md) · [简体中文](./README_CN.md) · [Quick Start](#-quick-start) · [Documentation](#-documentation)
 
@@ -126,8 +127,50 @@ Transparent and safe AI behavior:
 
 ### Prerequisites
 - CLI environment with file system access (Codex CLI, Claude Code, or custom AI client)
+- Node.js >= 14.0.0 (only required for npx installation)
 
 ### Installation
+
+#### Option 1: npx One-Click Install (Recommended)
+
+```bash
+# Interactive installation
+npx helloagents
+
+# Install with default options (non-interactive)
+npx helloagents -y
+
+# Specify platform and language
+npx helloagents --platform claude --lang en
+
+# Preview operations without writing (dry run)
+npx helloagents --dry-run
+```
+
+**CLI Options:**
+
+| Option | Description |
+|--------|-------------|
+| `--platform <claude\|codex>` | Target platform (skip prompt) |
+| `--lang <cn\|en>` | Language version (skip prompt) |
+| `--yes, -y` | Use all default options (non-interactive) |
+| `--dry-run` | Show operations without writing |
+| `--skills-only` | Only update skills/helloagents, skip config file |
+| `--overwrite` | Force overwrite config file (no .new) |
+| `--no-backup` | Skip backup step |
+| `--no-color` | Disable ANSI color output |
+
+**Conflict Handling:**
+- When config file (CLAUDE.md/AGENTS.md) exists, generates `.helloagents.new` by default
+- When skills/helloagents directory exists, backs up then overwrites by default
+- Use `--overwrite` to force overwrite config file
+- Use `--no-backup` to skip backup
+
+**Default Detection:**
+- Platform: Auto-detects `~/.claude` or `~/.codex` directory existence
+- Language: Defaults to Chinese (cn)
+
+#### Option 2: Manual Installation
 
 **Step 1: Copy the ruleset to your directory**
 

@@ -1,0 +1,38 @@
+{
+  "name": "helloagents",
+  "version": "1.0.0",
+  "description": "CLI tool to configure HelloAGENTS for Claude Code and Codex",
+  "bin": {
+    "helloagents": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "Claude/",
+    "Codex/"
+  ],
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "cli",
+    "claude",
+    "codex",
+    "ai",
+    "agents",
+    "helloagents"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellowind777/helloagents.git"
+  },
+  "homepage": "https://github.com/hellowind777/helloagents#readme",
+  "bugs": {
+    "url": "https://github.com/hellowind777/helloagents/issues"
+  }
+}

@@ -6,6 +6,25 @@
 
 ## [Unreleased]
 
+## [2026-01-03.1] - 2026-01-03
+
+### 新增
+- npx CLI 自动配置工具
+  - 一键安装：`npx helloagents`
+  - 交互式和非交互式两种模式
+  - 平台自动探测（Claude Code / Codex）
+  - 文件级冲突处理（备份、生成 .new、覆盖、跳过）
+  - Dry-run 预览功能
+  - 零外部依赖（纯 Node.js 原生 API）
+  - 跨平台支持（Windows / macOS / Linux）
+- GitHub Actions CI 测试矩阵
+  - 3 平台 × 4 Node 版本 = 12 个测试环境
+  - 自动化测试基线（20 个测试用例）
+  - CI 状态徽章
+
+### 变更
+- README 更新：添加 npx 安装说明和 CI 徽章
+
 ## [2025-12-18.2] - 2025-12-18
 
 ### 新增
