@@ -4,9 +4,10 @@
 
 **AI编程模块化技能系统 — 通过智能路由和人性化工作流，将混乱的智能体输出转化为结构化、可追溯、生产就绪的代码**
 
+[![npm version](https://img.shields.io/npm/v/helloagents.svg)](https://www.npmjs.com/package/helloagents)
+[![npm downloads](https://img.shields.io/npm/dm/helloagents.svg)](https://www.npmjs.com/package/helloagents)
 [![许可证](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 [![文档](https://img.shields.io/badge/docs-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![版本](https://img.shields.io/badge/version-2025--12--18.2-orange.svg)](#-版本历史)
 [![欢迎PR](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![测试](https://github.com/hellowind777/helloagents/actions/workflows/test.yml/badge.svg)](https://github.com/hellowind777/helloagents/actions/workflows/test.yml)
 

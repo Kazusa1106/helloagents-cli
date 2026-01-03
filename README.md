@@ -4,9 +4,10 @@
 
 **AI Programming Modular Skill System — Transform chaotic AI agent outputs into structured, traceable, production-ready code through intelligent routing and human-centric workflows**
 
+[![npm version](https://img.shields.io/npm/v/helloagents.svg)](https://www.npmjs.com/package/helloagents)
+[![npm downloads](https://img.shields.io/npm/dm/helloagents.svg)](https://www.npmjs.com/package/helloagents)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-2025--12--18.2-orange.svg)](#-version-history)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Test](https://github.com/hellowind777/helloagents/actions/workflows/test.yml/badge.svg)](https://github.com/hellowind777/helloagents/actions/workflows/test.yml)
 
