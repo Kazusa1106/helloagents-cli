@@ -128,7 +128,7 @@
 
 ### 前置要求
 - 具有文件系统访问权限的CLI环境（Codex CLI、Claude Code或自定义AI客户端）
-- Node.js >= 14.0.0（仅 npx 安装方式需要）
+- Node.js >= 16.0.0（仅 npx 安装方式需要）
 
 ### 安装
 

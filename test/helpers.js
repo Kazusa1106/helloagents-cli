@@ -20,7 +20,7 @@ async function createTestEnv() {
 }
 
 /**
- * Clean up test environment (Node 14 compatible)
+ * Clean up test environment (Node 16 compatible)
  * @param {string} dir - Directory to clean up
  * @returns {Promise<void>}
  */
@@ -29,7 +29,7 @@ async function cleanupTestEnv(dir) {
     throw new Error('Safety check: refusing to delete non-test directory');
   }
 
-  // Try fs.rm first (Node 14.14+)
+  // Try fs.rm first (Node 16+)
   if (fsPromises.rm) {
     try {
       await fsPromises.rm(dir, { recursive: true, force: true });

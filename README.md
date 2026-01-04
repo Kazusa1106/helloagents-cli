@@ -128,7 +128,7 @@ Transparent and safe AI behavior:
 
 ### Prerequisites
 - CLI environment with file system access (Codex CLI, Claude Code, or custom AI client)
-- Node.js >= 14.0.0 (only required for npx installation)
+- Node.js >= 16.0.0 (only required for npx installation)
 
 ### Installation
 
